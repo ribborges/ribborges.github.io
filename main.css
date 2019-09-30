@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: #343a40;
+	background-image: url(back.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+.lightBack {
+	width: 95%;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	background-color: rgba(240, 255, 255, 0.5);
+	padding: 3%;
+	margin: 0 auto;
+}
+
+.darkBack {
+	width: 95%;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	background-color: rgba(55, 59, 59, 0.5);
+	padding: 3%;
+	margin: 0 auto;
+}
