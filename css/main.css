@@ -4,7 +4,8 @@
 body {
 	background: #343a40;
 	background-image: url("../img/back.jpg");
-	background-attachment: fixed;
+	background-repeat: repeat;
+	background-size: 100%;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 }
 
