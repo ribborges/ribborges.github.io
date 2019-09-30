@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background: #95C9FF;
+	background-image: url("../img/rainbow.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+header{
+	background: rgba(248, 168, 249, 0.5);
+	padding: 5%;
+	color: #FFFFFF;
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+nav{
+	background: rgba(182, 236, 143, 0.5);
+	color: #FFFFFF;
+	width: 80%;
+	height: 40px;
+	margin: 0 auto;
+}
+
+section{
+	background: rgba(255, 255, 255, 0.5);
+	color: #3E3805;
+	width: 80%;
+	height: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+footer{
+	background: rgba(46, 46, 46, 0.5);
+	padding: 2%;
+	color: #FFFFFF;
+	text-align: center;
+	align-items: center;
+	width: 80%;
+	margin: 0 auto;
+}

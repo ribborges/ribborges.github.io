@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<title>Memory Game</title>
+		<link rel="icon" href="img/favicon.ico"/>
+		<script type="text/javascript" src="javascript/script.js"></script>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+	
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="css/arcademain.css">
+	</head>
+
+	<body onload="GameControl.createGame()">
+		<header id="header">
+			<br>
+			<img src="img/arcade.png" alt="Escrita ARCADE colorida">
+		 </header>
+		 
+		<ul class="nav nav-tabs" id="menu">
+			<li class="nav-item">
+				<a class="nav-link active btn" href="arcade.html">Memort Game</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link btn" href="velha.html">Noughts and Crosses</a>
+			</li>
+		</ul>
+		
+		<section id="main">
+    		<section id="col1">
+				<br>
+				<button type="button" class="btn btn-danger" onclick="GameControl.createGame()">Reload</button>
+    		</section>
+			
+    		<section id="col2">
+				
+    		</section>
+			
+    		<section id="col3">
+				<section id="score">
+				</section>
+    		</section>
+		</section>
+
+ 		<footer id="foot">
+     		<p><strong>- Developed by Richard de Carvalho Borges | Copyright© 2018 -</strong></p>
+ 		</footer>
+	</body>
+</html>
