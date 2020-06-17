@@ -3,11 +3,16 @@
 
 body {
 	background: #343a40;
-	background-image: url("../img/back.jpg");
+	background-image: url("../img/redsky.jpg");
+	background-size: 100%;
+	background-attachment: fixed;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 }
 
 .lightBack {
+	box-shadow: 0 0 50px;
+    background-image: url('http://api.thumbr.it/whitenoise-361x370.png?background=ffffff00&noise=a0a0a0&density=35&opacity=10');
+    backdrop-filter: blur(10px);
 	width: 95%;
 	color: rgb(0, 0, 0);
 	text-align: center;
@@ -17,10 +22,20 @@ body {
 }
 
 .darkBack {
+	box-shadow: 0 0 50px;
+    background-image: url('http://api.thumbr.it/whitenoise-361x370.png?background=ffffff00&noise=a0a0a0&density=35&opacity=10');
+    backdrop-filter: blur(10px);
 	width: 95%;
 	color: rgb(255, 255, 255);
 	text-align: center;
 	background-color: rgba(55, 59, 59, 0.5);
 	padding: 3%;
 	margin: 0 auto;
+}
+
+.acrylicMenu{
+    background-color: #415966ad;
+    box-shadow: 0 0 50px;
+    background-image: url('http://api.thumbr.it/whitenoise-361x370.png?background=ffffff00&noise=a0a0a0&density=35&opacity=10');
+    backdrop-filter: blur(10px);
 }
