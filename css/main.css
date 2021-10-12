@@ -7,11 +7,6 @@ body {
 	font-family: monospace;
 }
 
-footer {
-	width: 80%;
-	padding: 20px;
-}
-
 .acrylic {
     backdrop-filter: blur(20px);
 	text-align: center;
@@ -22,13 +17,18 @@ footer {
 .navbar {
 	color: #eeeeee;
 	background-color: #3a41e4;
+	box-sizing: border-box;
 	padding: 20px;
 	height: 100%;
 	width: 20%;
+	float: left;
+	display: inline;
 	position: fixed;
 	z-index: 1;
 	top: 0;
+	bottom: 0;
 	left: 0;
+	right: 0;
 }
 
 .nav-btn {
@@ -50,20 +50,26 @@ footer {
 }
 
 .content {
-	position: absolute;
-	float: right;
-	right: 0;
-	height: 100%;
-	width: 75%;
+	box-sizing: border-box;
 	padding: 20px;
+	float: right;
+	display: inline;
+	width: 80%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .footer {
-	background-color: #303030;
+	background-color: #30303050;
 	width: auto;
 	margin: 10px;
 	padding: 10px;
 	border-radius: 5px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
 }
 
 .figure-card {
