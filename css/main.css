@@ -21,6 +21,8 @@ body {
 	padding: 20px;
 	height: 100%;
 	width: 20%;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
 	float: left;
 	display: inline;
 	position: fixed;
