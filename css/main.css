@@ -68,6 +68,7 @@ body {
 	background-color: #303030;
 	padding: 10px;
 	border-radius: 5px;
+	margin: 5px;
 }
 
 .figure-card-img{
@@ -112,6 +113,12 @@ body {
 	border-top-width: 1px;
 	border-top-style: solid;
 	border-top-color: #eeeeee;
+}
+
+.blankspace {
+	border-style: none;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 h1 {font-size: 3em;}
@@ -182,7 +189,7 @@ h3 {font-size: 1.5em;}
 		width: 100%;
 		border-bottom-right-radius: 5px;
 		border-bottom-left-radius: 5px;
-		display: inherit;
+		display: inline;
 		position: fixed;
 		z-index: 1;
 		top: 0;
@@ -201,6 +208,7 @@ h3 {font-size: 1.5em;}
 
 	.menu-btn {
 		float: right;
+		margin-right: 15px;
 	}
 
 	.content {
