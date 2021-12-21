@@ -1,0 +1,75 @@
+/* Button styles */
+
+.btn {
+    text-decoration: none;
+	display: block;
+    border-radius: 5px;
+	padding: 20px;
+	margin: 5px;
+	transition: 0.5s;
+}
+
+.btn:hover {
+    text-shadow: 1px 1px 10px white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-btn {
+	color: #eeeeee;
+	background-color: #5e17eb;
+}
+
+.nav-btn:hover {
+	color: #eeeeee;
+	background-color: #8c52ff;
+}
+
+.figure-btn {
+	color: #eeeeee;
+	background-color: #1a1a1a;
+}
+
+.figure-btn:hover {
+	color: #1a1a1a;
+	background-color: #eeeeee;
+}
+
+.email-btn {
+	color: #eeeeee;
+	background-color: #299eff;
+}
+
+.email-btn:hover {
+	color: #1a1a1a;
+	background-color: #83c7ff;
+}
+
+.linkedin-btn {
+	color: #eeeeee;
+	background-color: #083e69;
+}
+
+.linkedin-btn:hover {
+	color: #1a1a1a;
+	background-color: #26557c;
+}
+
+.github-btn {
+	color: #eeeeee;
+	background-color: #009207;
+}
+
+.github-btn:hover {
+	color: #1a1a1a;
+	background-color: #53ac58;
+}
+
+.cv-btn {
+	color: #eeeeee;
+	background-color: #86005e;
+}
+
+.cv-btn:hover {
+	color: #1a1a1a;
+	background-color: #c72a98;
+}

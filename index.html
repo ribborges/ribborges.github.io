@@ -1,33 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-	<title>Richard de Carvalho Borges</title>
-	<link rel="icon" href="img/webicon.ico"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<title>Richard de Carvalho Borges</title>
+		<link rel="icon" type="image/svg+xml" href="img/webicon.ico"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Bootstrap Icons -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+		<!-- Bootstrap Icons -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-  </head>
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 
-  <body>
+		<script src="script/script.js"></script>
+	</head>
+
+<body>
+	<nav id="menu" class="menu row">
+		<h1 class="title column-2">RICHARD DE CARVALHO BORGES</h1>
+		
+		<a class="btn nav-btn menu-btn column-2" href="javascript:void(0);" onclick="openMenu()"><i class="bi bi-list"></i></a>
+	</nav>
+
 	<nav id="navbar" class="navbar">
-		<h3>RICHARD DE CARVALHO BORGES</h3>
+		<h1 class="title">RICHARD DE CARVALHO BORGES</h1>
 
-		<a class="nav-btn" href="#about">About me</a>
+		<a class="btn nav-btn" href="#about">About me</a>
 
-		<a class="nav-btn" href="#portfolio">Portfolio</a>
+		<a class="btn nav-btn" href="#portfolio">Portfolio</a>
 
-		<a class="nav-btn" href="#contact">Contact</a>
-
-		<footer class="footer">
-			<p>Developed by: Richard de Carvalho Borges</p>
-			<p>Copyright © 2018-2021</p>
-		</footer>
+		<a class="btn nav-btn" href="#contact">Contact</a>
 	</nav>
 
 	<main class="content">
@@ -42,6 +45,8 @@
 			</ul>
 		</section>
 
+		<hr class="spacer">
+
 		<section id="portfolio">
 			<h1>PORTFOLIO</h1>
 
@@ -54,7 +59,7 @@
 						<figcaption class="figure-card-caption">
 							<h3>Multiplication table</h3>
 							<p>Multiplication table for web developed for the class "Special topics in computing I".</p>
-							<a href="mTable/mTable.html" class="nav-btn" target="_blank" rel="noopener noreferrer">Open</a>
+							<a href="mTable/mTable.html" class="btn figure-btn" target="_blank" rel="noopener noreferrer">Open</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -65,7 +70,7 @@
 						<figcaption class="figure-card-caption">
 							<h3>Noughts and crosses | Memory game</h3>
 							<p>Game developed for the class "Algorithms and data structures I".</p>
-							<a href="Arcade/arcade.html" class="nav-btn" target="_blank" rel="noopener noreferrer">Open</a>
+							<a href="Arcade/arcade.html" class="btn figure-btn" target="_blank" rel="noopener noreferrer">Open</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -76,7 +81,7 @@
 						<figcaption class="figure-card-caption">
 							<h3>Audio game for kids</h3>
 							<p>A game to teach English for children. Developed for the class "Algorithms and data structures I".</p>
-							<a href="Kids/audio.html" class="nav-btn" target="_blank" rel="noopener noreferrer">Open</a>
+							<a href="Kids/audio.html" class="btn figure-btn" target="_blank" rel="noopener noreferrer">Open</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -91,7 +96,7 @@
 						<figcaption class="figure-card-caption">
 							<h3>Tower Defense Starter Sample</h3>
 							<p>A very modular and easy to customize Tower Defense project made with blueprint that provides functionalities for towers, enemys, rounds and UI selection.</p>
-							<a href="mTable/mTable.html" class="nav-btn" target="_blank" rel="noopener noreferrer">Open</a>
+							<a href="mTable/mTable.html" class="btn figure-btn" target="_blank" rel="noopener noreferrer">Open</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -102,45 +107,49 @@
 						<figcaption class="figure-card-caption">
 							<h3>Interactive Objects System</h3>
 							<p>-</p>
-							<a href="Arcade/arcade.html" class="nav-btn" target="_blank" rel="noopener noreferrer">Open</a>
+							<a href="Arcade/arcade.html" class="btn figure-btn" target="_blank" rel="noopener noreferrer">Open</a>
 						</figcaption>
 					</figure>
 				</div>
 			</div>
 		</section>
 
-		<section id="contact" class="darkBack">
+		<hr class="spacer">
+
+		<section id="contact">
 			<h1>CONTACT ME</h1>
 
 			<div class="row">
 				<div class="column-4">
-					<a href="mailto:ribborges@outlook.com" class="nav-btn" style="background-color: #299eff;" target="_blank" rel="noopener noreferrer">
+					<a href="mailto:ribborges@outlook.com" class="btn email-btn" target="_blank" rel="noopener noreferrer">
 						<i class="bi bi-envelope-fill"></i> Email
 					</a>
 				</div>
 
 				<div class="column-4">
-					<a href="https://linkedin.com/in/ribborges" class="nav-btn" style="background-color: #083e69;" target="_blank" rel="noopener noreferrer">
+					<a href="https://linkedin.com/in/ribborges" class="btn linkedin-btn" target="_blank" rel="noopener noreferrer">
 						<i class="bi bi-linkedin"></i> LinkedIn
 					</a>
 				</div>
 
 				<div class="column-4">
-					<a href="https://github.com/ribborges" class="nav-btn" style="background-color: #009207;" target="_blank" rel="noopener noreferrer">
+					<a href="https://github.com/ribborges" class="btn github-btn" target="_blank" rel="noopener noreferrer">
 						<i class="bi bi-github"></i> Github
 					</a>
 				</div>
 
 				<div class="column-4">
-					<a href="" class="nav-btn" style="background-color: #86005e;" target="_blank" rel="noopener noreferrer">
+					<a href="" class="btn cv-btn" target="_blank" rel="noopener noreferrer">
 						<i class="bi bi-file-earmark-person-fill"></i> Curriculum Vitae
 					</a>
 				</div>
 			</div>
 		</section>
+
+		<footer class="footer">
+			<p>Developed by: Richard de Carvalho Borges</p>
+			<p>Copyright © 2018-2021</p>
+		</footer>
 	</main>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
 	</body>
 </html>
