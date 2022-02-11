@@ -140,6 +140,7 @@ h3 {font-size: 1.5em;}
 	color: #1a1a1a;
 	background-color: #c5c5c5;
     text-decoration: none;
+	display: block;
     border-radius: 15px;
 	padding: 25px;
 	margin: 10px;
@@ -153,7 +154,7 @@ h3 {font-size: 1.5em;}
 	box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 
-.nav-btn {color: #eeeeee; background-color: #5e17eb; padding: 30px;}
+.nav-btn {color: #eeeeee; background-color: #5e17eb; padding: 30px; display: unset;}
 
 .nav-btn:hover, .nav-btn:focus {color: #eeeeee; background-color: #8c52ff;}
 
