@@ -18,21 +18,40 @@
 	</head>
 
 <body>
-	<nav id="menu" class="menu row">
-		<a class="btn nav-btn menu-btn column-2" href="javascript:void(0);" onclick="openMenu()"><i class="bi bi-list"></i></a>
+	<nav id="mobile-navbar" class="navbar mobile-navbar">
+		<div style="margin-left: 15px;">
+			<h1 class="title">RICHARD DE CARVALHO BORGES</h1>
+		</div>
+
+		<div style="margin-right: 15px;">
+			<a class="btn nav-btn menu-btn column-2" href="javascript:void(0);" onclick="openMenu()"><i class="bi bi-list"></i></a>
+		</div>
+	</nav>
+
+	<nav id="menu" class="menu">
+		<div style="width: 100%">
+			<a class="btn nav-btn" style="display: block;" href="#about" onclick="openMenu()"><i class="bi bi-person"></i> About me</a>
+
+			<a class="btn nav-btn" style="display: block;" href="#portfolio" onclick="openMenu()"><i class="bi bi-briefcase"></i> Portfolio</a>
+
+			<a class="btn nav-btn" style="display: block;" href="#contact" onclick="openMenu()"><i class="bi bi-card-list"></i> Contact</a>
+		</div>
 	</nav>
 
 	<nav id="navbar" class="navbar">
-		<h1 class="title">RICHARD DE CARVALHO BORGES</h1>
+		<div style="margin-left: 15px;">
+			<h1 class="title">RICHARD DE CARVALHO BORGES</h1>
+		</div>
+		<div style="margin-right: 15px;">
+			<a class="btn nav-btn" href="#about"><i class="bi bi-person"></i> About me</a>
 
-		<a class="btn nav-btn" href="#about"><i class="bi bi-person"></i> About me</a>
+			<a class="btn nav-btn" href="#portfolio"><i class="bi bi-briefcase"></i> Portfolio</a>
 
-		<a class="btn nav-btn" href="#portfolio"><i class="bi bi-briefcase"></i> Portfolio</a>
-
-		<a class="btn nav-btn" href="#contact"><i class="bi bi-card-list"></i> Contact</a>
+			<a class="btn nav-btn" href="#contact"><i class="bi bi-card-list"></i> Contact</a>
+		</div>
 	</nav>
 
-	<hr class="blankspace">
+	<hr style="height: 80px;">
 
 	<main class="content">
 		<section id="about">
@@ -177,11 +196,11 @@
 		</section>
 
 		<hr class="spacer">
-
-		<footer class="footer">
-			<p>Developed by: Richard de Carvalho Borges</p>
-			<p>Copyright © 2018-2021</p>
-		</footer>
 	</main>
+
+	<footer class="footer">
+		<p>Developed by: Richard de Carvalho Borges</p>
+		<p>Copyright © 2018-2021</p>
+	</footer>
 	</body>
 </html>
