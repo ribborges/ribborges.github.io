@@ -21,6 +21,16 @@ body::-webkit-scrollbar {
 	margin: 0 auto;
 }
 
+.picture {
+	border-radius: 50%;
+	background-image: url("../img/FOTO.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+	width: 300px;
+	background-color: #009207;
+}
+
 .navbar {
 	color: #eeeeee;
 	background-color: #3a41e4;
