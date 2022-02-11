@@ -48,15 +48,15 @@ body::-webkit-scrollbar {
 	left: 0;
 	right: 0;
 	margin: 5%;
-	background-color: #083e69;
-	border-radius: 10px;
+	background-color: #30303050;
+	border-radius: 15px;
 }
 
 .footer {
 	padding: 5%;
 	margin: 5%;
 	background-color: #30303050;
-	border-radius: 10px;
+	border-radius: 15px;
 	left: 0;
 	bottom: 0;
 	transition: 1s;
@@ -68,26 +68,26 @@ body::-webkit-scrollbar {
 }
 
 .footer:hover, .footer:focus {
-	background-color: #30303080;
+	background-color: #53535380;
 }
 
 .figure-card {
 	background-color: #303030;
 	padding: 10px;
-	border-radius: 5px;
+	border-radius: 15px;
 	margin: 5px;
 }
 
 .figure-card-img{
 	width: 100%;
-	border-radius: 5px;
+	border-radius: 15px;
 }
 
 .figure-card-caption {
 	padding: 10px;
 	margin-top: 10px;
 	border-style: double;
-	border-radius: 5px;
+	border-radius: 15px;
 	border-color: #818181
 }
 
@@ -140,8 +140,8 @@ h3 {font-size: 1.5em;}
 	color: #1a1a1a;
 	background-color: #c5c5c5;
     text-decoration: none;
-    border-radius: 5px;
-	padding: 15px;
+    border-radius: 15px;
+	padding: 25px;
 	margin: 10px;
 	transition: 0.5s;
 }
