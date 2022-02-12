@@ -3,7 +3,7 @@ function gerartab(){
 
 	var i;
 
-	var table = document.getElementById("table");
+	var table = document.getElementById("mTable");
 
 	let tr = document.createElement("tr");
 	table.appendChild(tr);
