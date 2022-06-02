@@ -30,6 +30,11 @@ body::-webkit-scrollbar {
 	height: 300px;
 	width: 300px;
 	background-color: #ffffff;
+	transition: 1s;
+}
+
+.picture:hover, .picture:focus {
+	border-radius: 10px;
 }
 
 .navbar {
@@ -59,15 +64,15 @@ body::-webkit-scrollbar {
 	left: 0;
 	right: 0;
 	margin: 5%;
-	background-color: #30303050;
+	background-color: #202020;
 	border-radius: 15px;
 }
 
 .footer {
 	padding: 5%;
 	margin: 5%;
-	background-color: #30303050;
-	border-radius: 15px;
+	background-color: #202020;
+	border-radius: 10px;
 	left: 0;
 	bottom: 0;
 	transition: 1s;
@@ -79,26 +84,32 @@ body::-webkit-scrollbar {
 }
 
 .footer:hover, .footer:focus {
-	background-color: #53535380;
+	background-color: #404040;
+	border-radius: 50px;
 }
 
 .figure-card {
 	background-color: #303030;
 	padding: 10px;
-	border-radius: 15px;
+	border-radius: 10px;
 	margin: 5px;
+	transition: 1s;
+}
+
+.figure-card:hover, .figure-card:focus {
+	background-color: #505050;
 }
 
 .figure-card-img{
 	width: 100%;
-	border-radius: 15px;
+	border-radius: 10px;
 }
 
 .figure-card-caption {
 	padding: 10px;
 	margin-top: 10px;
 	border-style: solid;
-	border-radius: 15px;
+	border-radius: 10px;
 	border-color: #818181
 }
 
@@ -207,8 +218,14 @@ input[type=number]:hover, input[type=number]:focus {
 	right: 0;
 	margin: 5%;
 	background-color: #3a40e460;
-	border-radius: 15px;
+	border-radius: 10px;
 	text-align: center;
+	transition: 1s;
+}
+
+.pageTitle:hover, .pageTitle:focus {
+	background-color: #3a40e4CC;
+	border-radius: 50px;
 }
 
 /* Button styles */
@@ -218,10 +235,10 @@ input[type=number]:hover, input[type=number]:focus {
 	background-color: #1a1a1a;
     text-decoration: none;
 	display: block;
-    border-radius: 15px;
+    border-radius: 10px;
 	padding: 25px;
 	margin: 10px;
-	transition: 0.5s;
+	transition: 1s;
 	border: none;
 }
 
@@ -230,6 +247,7 @@ input[type=number]:hover, input[type=number]:focus {
 	background-color: #eeeeee;
     text-shadow: 1px 1px 10px white;
 	box-shadow: 0 4px 8px 0 #ffffff33, 0 6px 20px 0 #ffffff30;
+	border-radius: 50px;
 }
 
 .nav-btn {color: #eeeeee; background-color: #5e17eb; padding: 30px; display: unset;}
