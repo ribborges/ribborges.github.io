@@ -8,9 +8,9 @@
         $primary-color;  
     animation: bg 30s infinite;
     width: auto;
-    height: 70vh;
+    height: 60vh;
     padding: 15vh;
-    padding-top: 10%;
+    padding-top: 30%;
     position: relative;
 	top: 0;
 	bottom: 0;
@@ -34,7 +34,7 @@
     width: auto;
     height: 20vh;
 	padding: 15vh;
-    padding-top: 10%;
+    padding-top: 30%;
 	position: relative;
 	top: 0;
 	bottom: 0;
@@ -76,8 +76,6 @@
 
 @media screen and (max-width: 700px) {
     .header {
-        padding: 2rem;
-        
         div {
             margin: 0;
         }
