@@ -493,6 +493,7 @@ h3 {
   width: auto;
   height: 70vh;
   padding: 15vh;
+  padding-top: 10%;
   position: relative;
   top: 0;
   bottom: 0;
@@ -515,6 +516,7 @@ h3 {
   width: auto;
   height: 20vh;
   padding: 15vh;
+  padding-top: 10%;
   position: relative;
   top: 0;
   bottom: 0;
