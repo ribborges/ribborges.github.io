@@ -1,0 +1,79 @@
+@import './var';
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin acrylic {
+    backdrop-filter: blur(20px);
+}
+
+html, body {
+    @include reset();
+    color: $light-color;
+    font-family: $primary-font;
+    background-color: $dark-color;
+	font-size: $primary-font-size;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
+.spacer {
+	display: block;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	border-bottom: none;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: $dark-grey-color;
+}
+
+.text-fx {
+    background-image: linear-gradient(
+        -90deg,
+        $secondary-color 0%,
+        $tertiary-color 29%,
+        $quaternary-color 67%,
+        $secondary-color 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.blankspace {
+	border-style: none;
+	height: 1vw;
+}
+
+h1 {font-size: 3em;}
+
+h2 {font-size: 2em;}
+
+h3 {font-size: 1.5em;}
+
+.acrylic {
+    backdrop-filter: blur(20px);
+	text-align: center;
+	padding: 2%;
+	margin: 0 auto;
+}

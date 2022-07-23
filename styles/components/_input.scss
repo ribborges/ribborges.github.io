@@ -1,0 +1,29 @@
+@import "../abstract/var";
+
+input[type=number] {
+	padding: 15px;
+	color: $light-color;
+    background-color: $dark-color;
+	border-style: none;
+    border: none;
+    border-radius: 15px;
+    border: 2px solid $light-color;
+    cursor: pointer;
+	transition: 0.5s;
+
+    &:hover, &:focus {
+        color: $dark-color;
+        background-color: $light-color;
+	    text-shadow: 1px 1px 10px white;
+	    box-shadow: 0 4px 8px 0 $light-grey-color, 0 6px 20px 0 $light-grey-color;
+    }
+
+    &::-webkit-inner-spin-button {
+        width: 30px;
+        height: 50px;
+        margin: 17px;
+        padding: 5px;
+        transform: rotate(90deg);
+        cursor: pointer;
+    }
+}

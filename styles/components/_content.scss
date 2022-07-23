@@ -1,0 +1,19 @@
+@import "../abstract/var";
+
+.content {
+	padding: 5vw;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+    section {
+        background-color: $dark-color;
+        padding: 5vw;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    border-radius: 15px;
+    }
+}

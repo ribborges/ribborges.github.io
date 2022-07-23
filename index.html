@@ -11,59 +11,49 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 		<!-- Custom CSS -->
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
 
 		<!-- Custom Javascript -->
 		<script src="script/script.js"></script>
 	</head>
 <body>
-	<nav id="mobile-navbar" class="navbar mobile-navbar">
-		<div style="margin-left: 15px;">
-			<a class="btn nav-btn menu-btn column-2" href="index.html"><i class="bi bi-house-door-fill"></i> Home</a>
-		</div>
-
-		<div style="margin-right: 15px;">
-			<a class="btn nav-btn menu-btn column-2" href="javascript:void(0);" onclick="openMenu()"><i class="bi bi-list"></i></a>
-		</div>
-	</nav>
-
-	<nav id="menu" class="menu">
-		<div style="width: 100%">
-			<a class="btn nav-btn" style="display: block;" href="#about" onclick="openMenu()"><i class="bi bi-person"></i> About me</a>
-
-			<a class="btn nav-btn" style="display: block;" href="#portfolio" onclick="openMenu()"><i class="bi bi-briefcase"></i> Portfolio</a>
-
-			<a class="btn nav-btn" style="display: block;" href="#contact" onclick="openMenu()"><i class="bi bi-card-list"></i> Contact</a>
-		</div>
-	</nav>
-
 	<nav id="navbar" class="navbar">
-		<div style="margin-left: 15px;">
-			<a class="btn nav-btn menu-btn column-2" href="index.html"><i class="bi bi-house-door-fill"></i> Home</a>
-		</div>
-		<div style="margin-right: 15px;">
-			<a class="btn nav-btn" href="#about"><i class="bi bi-person"></i> About me</a>
+		<a class="btn nav-btn" href="index.html"><i class="bi bi-house-door-fill"></i><i class="nav-btn-text"> Home</i></a>
 
-			<a class="btn nav-btn" href="#portfolio"><i class="bi bi-briefcase"></i> Portfolio</a>
+		<a style="margin-left:auto;" class="btn nav-btn" href="#about"><i class="bi bi-person"></i> About me</a>
 
-			<a class="btn nav-btn" href="#contact"><i class="bi bi-card-list"></i> Contact</a>
-		</div>
+		<a class="btn nav-btn" href="#portfolio"><i class="bi bi-briefcase"></i> Portfolio</a>
+
+		<a class="btn nav-btn" href="#contact"><i class="bi bi-card-list"></i> Contact</a>
 	</nav>
 
-	<hr style="height: 80px;">
-
-	<header class="pageTitle">
-		<h1 class="title">Richard de Carvalho Borges</h1>
+	<header class="header">
+		<div class="row">
+			<div>
+				<div class="avatar">
+					<img src="./img/FOTO.jpg">
+				</div>
+			</div>
+			<div>
+				<h1 class="title text-fx">Front-end<p>developer</p></h1>
+			</div>
+		</div>
 	</header>
 
 	<main class="content">
 		<section id="about">
 			<div class="picture"></div>
 			<h1><i class="bi bi-person"></i> ABOUT ME</h1>
-			<p>Olá, sou Richard Borges, sou um desenvolvedor web com conhecimentos em JavaScript, C#,
-				 ASP.Net, Vue.js, Node.js e MongoDB e estou sempre atento as atualizações do mercado.
-				Me considero extremamente comunicativo, criativo e organizado. Sou entusiasta em desenvolvimento de jogos com
-				 Unreal Engine (C++ e programação visual em blueprints) com varios pequenos projetos desenvolvidos.</p>
+			<p>Sou desenvolvedor Front-end, tenho um perfil comunicativo e me considero extremamente criativo.
+
+				Sou apaixonado por tecnologia desde pequeno. Iniciei meus estudos na área com o curso de
+				 técnico de informática na ETEC e, logo em seguida, para o curso de ciência da computação
+				 na PUC Minas.
+				
+				Minhas principais habilidades são voltadas ao desenvolvimento Front-end como: HTML,
+				 CSS, JavaScript, TypeScript, React e SASS. Também tenho profundo conhecimento em bases
+				 de dados não relacionais, como MongoDB e sou grande entusiasta no desenvolvimento de
+				 jogos com Unreal (C++) e Unity (C#).</p>
 			<h2>Principais competências</h2>
 			<ul>
 				<li>Desenvolvimento para Web;</li>
@@ -83,8 +73,8 @@
 			<div class="row">
 				<div class="column-3">
 					<figure class="figure-card">
-						<img src="img/mTable.png" class="figure-card-img" alt="Multiplication table">
-						<figcaption class="figure-card-caption">
+						<img src="img/mTable.png" alt="Multiplication table">
+						<figcaption>
 							<h3>Multiplication table</h3>
 							<p>Multiplication table for web developed for the class "Special topics in computing I".</p>
 							<a href="mTable/mTable.html" class="btn figure-btn" target="_blank" rel="noopener noreferrer">Open</a>
@@ -94,8 +84,8 @@
 
 				<div class="column-3">
 					<figure class="figure-card">
-						<img src="img/jogodavelha.png" class="figure-card-img" alt="Noughts and crosses">
-						<figcaption class="figure-card-caption">
+						<img src="img/jogodavelha.png" alt="Noughts and crosses">
+						<figcaption>
 							<h3>Noughts and crosses | Memory game</h3>
 							<p>Game developed for the class "Algorithms and data structures I".</p>
 							<a href="Arcade/arcade.html" class="btn figure-btn" target="_blank" rel="noopener noreferrer">Open</a>
@@ -105,8 +95,8 @@
 
 				<div class="column-3">
 					<figure class="figure-card">
-						<img src="img/gameforkids.png" class="figure-card-img" alt="Audio game for kids">
-						<figcaption class="figure-card-caption">
+						<img src="img/gameforkids.png" alt="Audio game for kids">
+						<figcaption>
 							<h3>Audio game for kids</h3>
 							<p>A game to teach English for children. Developed for the class "Algorithms and data structures I".</p>
 							<a href="Kids/audio.html" class="btn figure-btn" target="_blank" rel="noopener noreferrer">Open</a>
@@ -120,8 +110,8 @@
 			<div class="row">
 				<div class="column-3">
 					<figure class="figure-card">
-						<img src="https://cdn1.epicgames.com/ue/product/Thumbnail/TowerDefenseStarterSample_thumb-284x284-52a08058d35fd39e07ec6b13d5bf6052.png" class="figure-card-img" alt="UE4 Marketplace Tower Defense Sample">
-						<figcaption class="figure-card-caption">
+						<img src="https://cdn1.epicgames.com/ue/product/Thumbnail/TowerDefenseStarterSample_thumb-284x284-52a08058d35fd39e07ec6b13d5bf6052.png" alt="UE4 Marketplace Tower Defense Sample">
+						<figcaption>
 							<h3>Tower Defense Starter Sample</h3>
 							<p>A very modular and easy to customize Tower Defense project made with blueprint that provides functionalities for towers, enemys, rounds and UI selection.</p>
 							<a href="https://www.unrealengine.com/marketplace/en-US/product/tower-defense-starter-sample" class="btn figure-btn" target="_blank" rel="noopener noreferrer">Open</a>
@@ -131,8 +121,8 @@
 
 				<div class="column-3">
 					<figure class="figure-card">
-						<img src="https://cdn1.epicgames.com/ue/product/Thumbnail/InteractiveObjectsSystemV2_thumb-284x284-67884fc044110194f4082ceb7e189e66.png" class="figure-card-img" alt="UE4 Marketplace Interactive Objects System">
-						<figcaption class="figure-card-caption">
+						<img src="https://cdn1.epicgames.com/ue/product/Thumbnail/InteractiveObjectsSystemV2_thumb-284x284-67884fc044110194f4082ceb7e189e66.png" alt="UE4 Marketplace Interactive Objects System">
+						<figcaption>
 							<h3>Interactive Objects System V2</h3>
 							<p>Interactive Objects System V2 is a fully customizable and modular system for interaction with objects, triggers, doors, windows, items, furniture, physics and more.</p>
 							<a href="https://www.unrealengine.com/marketplace/en-US/product/interactive-objects-system" class="btn figure-btn" target="_blank" rel="noopener noreferrer">Open</a>
@@ -142,8 +132,8 @@
 
 				<div class="column-3">
 					<figure class="figure-card">
-						<img src="https://cdn1.epicgames.com/ue/product/Thumbnail/PlatformGameEngine_thumb-284x284-2dd4955bebaa42ccc689a32c0548424f.png" class="figure-card-img" alt="UE4 Marketplace Interactive Objects System">
-						<figcaption class="figure-card-caption">
+						<img src="https://cdn1.epicgames.com/ue/product/Thumbnail/PlatformGameEngine_thumb-284x284-2dd4955bebaa42ccc689a32c0548424f.png" alt="UE4 Marketplace Interactive Objects System">
+						<figcaption>
 							<h3>Platform Game Engine</h3>
 							<p>Platform Game Engine is a complete platform game kit with meshes, textures, materials, full gameplay, enemy AI, save game, collectibles, power up system, interactive environment, puzzles, inventory and more…</p>
 							<a href="https://www.unrealengine.com/marketplace/en-US/product/platform-game-engine" class="btn figure-btn" target="_blank" rel="noopener noreferrer">Open</a>
@@ -188,7 +178,11 @@
 
 	<footer class="footer">
 		<p>Developed by: Richard de Carvalho Borges</p>
-		<p>Copyright © 2018-2021</p>
+		<p>Copyright © 2018-2022</p>
 	</footer>
-	</body>
+
+	<hr class="blankspace">
+
+	<script src="script/navStyle.js"></script>
+</body>
 </html>

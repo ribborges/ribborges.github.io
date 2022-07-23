@@ -1,0 +1,27 @@
+@import "../abstract/var";
+
+.figure-card {
+	background-color: $dark-grey-color;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 5px;
+	transition: 1s;
+
+    &:hover, &:focus {
+        background-color: $light-grey-color;
+    }
+
+    img {
+        width: 100%;
+	    border-radius: 10px;
+    }
+
+    figcaption {
+        padding: 10px;
+	    margin-top: 10px;
+	    border-style: solid;
+        border-width: 2px;
+	    border-radius: 10px;
+	    border-color: $light-color;
+    }
+}

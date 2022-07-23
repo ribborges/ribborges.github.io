@@ -1,0 +1,94 @@
+@import "../abstract/var";
+
+@mixin btn-base {
+    color: $light-color;
+	background-color: transparent;
+    text-decoration: none;
+	display: block;
+    border-radius: 10px;
+	padding: 25px;
+	margin: 10px;
+	transition: 1s;
+	border: 2px solid $light-color;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        color: $dark-color;
+        background-color: $light-color;
+        text-shadow: 1px 1px 10px $light-color;
+	    box-shadow: 0 0 2px 0 $dark-color;
+	    border-radius: 50px;
+    }
+}
+
+@mixin nav-btn-scrolled {
+    color: $dark-color;
+    border-color: $dark-color;
+
+    &:hover, &:focus {
+        color: $light-color;
+        background-color: $dark-color;
+    }
+}
+
+.btn {
+	@include btn-base();
+}
+
+.nav-btn {
+    @include btn-base();
+    color: $light-color;
+    padding: 30px;
+    display: unset;
+
+    &.nav-btn.scrolled {
+        color: $dark-color;
+        border-color: $dark-color;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nav-btn {
+        padding: 10px;
+
+        .nav-btn-text {
+            display: none;
+        }
+    }
+}    
+
+.email-btn {
+    @include btn-base();
+    background-color: $primary-email-color;
+
+    &:hover, &:focus {
+        background-color: $secondary-email-color;
+    }
+}
+
+.linkedin-btn {
+    @include btn-base();
+    background-color: #083e69;
+
+    &:hover, &:focus {
+        background-color: #26557c;
+    }
+}
+
+.github-btn {
+    @include btn-base();
+    background-color: #009207;
+
+    &:hover, &:focus {
+        background-color: #53ac58;
+    }
+}
+
+.cv-btn {
+    @include btn-base();
+    background-color: #86005e;
+
+    &:hover, &:focus {
+        background-color: #c72a98;
+    }
+}
