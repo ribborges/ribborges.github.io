@@ -10,7 +10,7 @@
     width: auto;
     height: 60vh;
     padding: 15vh;
-    padding-top: 30%;
+    padding-top: 10%;
     position: relative;
 	top: 0;
 	bottom: 0;
@@ -76,6 +76,8 @@
 
 @media screen and (max-width: 700px) {
     .header {
+        padding-top: 40%;
+
         div {
             margin: 0;
         }

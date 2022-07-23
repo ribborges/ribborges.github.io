@@ -493,7 +493,7 @@ h3 {
   width: auto;
   height: 60vh;
   padding: 15vh;
-  padding-top: 30%;
+  padding-top: 10%;
   position: relative;
   top: 0;
   bottom: 0;
@@ -556,6 +556,9 @@ h3 {
 }
 
 @media screen and (max-width: 700px) {
+  .header {
+    padding-top: 40%;
+  }
   .header div {
     margin: 0;
   }
