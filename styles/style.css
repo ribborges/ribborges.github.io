@@ -741,7 +741,6 @@ input[type=number]::-webkit-inner-spin-button {
   color: #333333;
 }
 .accordion .accordion-panel {
-  padding: 0 18px;
   background-color: #505050;
   display: none;
   overflow: hidden;
