@@ -634,6 +634,33 @@ h3 {
   border-color: #eeeeee;
 }
 
+.vertical-card {
+  background-color: #333333;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  transition: 1s;
+}
+.vertical-card:hover, .vertical-card:focus {
+  background-color: #505050;
+}
+.vertical-card img {
+  left: 0;
+  width: 30%;
+  border-radius: 10px;
+}
+.vertical-card figcaption {
+  width: 100%;
+  right: 0;
+  padding: 10px;
+  margin: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: #eeeeee;
+}
+
 .footer {
   padding: 2vw;
   margin: 2vw;
@@ -678,4 +705,48 @@ input[type=number]::-webkit-inner-spin-button {
   padding: 5px;
   transform: rotate(90deg);
   cursor: pointer;
+}
+
+.accordion .accordion-btn {
+  background-color: #333333;
+  color: #eeeeee;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.accordion .accordion-btn:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.accordion .accordion-btn:nth-last-child(2) {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.accordion .accordion-btn:nth-last-child(2).active {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.accordion .accordion-btn:hover {
+  background-color: #505050;
+}
+.accordion .accordion-btn.active {
+  background-color: #505050;
+}
+.accordion .accordion-btn.active:hover {
+  background-color: #eeeeee;
+  color: #333333;
+}
+.accordion .accordion-panel {
+  padding: 0 18px;
+  background-color: #505050;
+  display: none;
+  overflow: hidden;
+}
+.accordion .accordion-panel:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }/*# sourceMappingURL=style.css.map */

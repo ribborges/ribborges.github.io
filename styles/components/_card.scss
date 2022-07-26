@@ -25,3 +25,33 @@
 	    border-color: $light-color;
     }
 }
+
+.vertical-card {
+    background-color: $dark-grey-color;
+    display: flex;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 5px;
+	transition: 1s;
+
+    &:hover, &:focus {
+        background-color: $light-grey-color;
+    }
+
+    img {
+        left: 0;
+        width: 30%;
+	    border-radius: 10px;
+    }
+
+    figcaption {
+        width: 100%;
+        right: 0;
+        padding: 10px;
+	    margin: 10px;
+	    border-style: solid;
+        border-width: 2px;
+	    border-radius: 10px;
+	    border-color: $light-color;
+    }
+}

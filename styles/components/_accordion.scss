@@ -1,0 +1,55 @@
+@import "../abstract/var";
+
+.accordion {
+    .accordion-btn {
+        background-color: $dark-grey-color;
+        color: $light-color;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        cursor: pointer;
+
+        &:first-child {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        &:nth-last-child(2) {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            &.active {
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+        }
+
+        &:hover {
+            background-color: $light-grey-color;
+        }
+
+        &.active {
+            background-color: $light-grey-color;
+
+            &:hover {
+                background-color: $light-color;
+                color: $dark-grey-color;
+            }
+        }
+    }
+
+    .accordion-panel {
+        padding: 0 18px;
+        background-color: $light-grey-color;
+        display: none;
+        overflow: hidden;
+
+        &:last-child {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+}
