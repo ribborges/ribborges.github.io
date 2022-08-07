@@ -1,8 +1,10 @@
+@import "../abstract/var";
+
 .footer {
 	padding: 2vw;
 	margin: 2vw;
-	background-color: #202020;
-	border-radius: 10px;
+	background-color: $dark-grey-color;
+	border-radius: $border-radius;
 	left: 0;
 	bottom: 0;
 	transition: 1s;
@@ -14,6 +16,5 @@
 }
 
 .footer:hover, .footer:focus {
-	background-color: #404040;
-	border-radius: 50px;
+	background-color: $light-grey-color;
 }

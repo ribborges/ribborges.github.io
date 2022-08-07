@@ -5,7 +5,8 @@
         radial-gradient(circle at bottom, $light-grey-color, transparent 50%),    
         linear-gradient(to top, $light-grey-color 0%, transparent 70%),    
         linear-gradient(to bottom, transparent, rgba($light-grey-color, 0.4) 70%),
-        $primary-color;  
+        $primary-color;
+    background-image: url( '../../img/background.svg' );
     animation: bg 30s infinite;
     width: auto;
     height: 60vh;

@@ -5,7 +5,7 @@
 	background-color: transparent;
     text-decoration: none;
 	display: block;
-    border-radius: 10px;
+    border-radius: $border-radius;
 	padding: 25px;
 	margin: 10px;
 	transition: 1s;
@@ -17,7 +17,6 @@
         background-color: $light-color;
         text-shadow: 1px 1px 10px $light-color;
 	    box-shadow: 0 0 2px 0 $dark-color;
-	    border-radius: 50px;
     }
 }
 
@@ -59,36 +58,36 @@
 
 .email-btn {
     @include btn-base();
-    background-color: $primary-email-color;
+    border: 2px solid $email-color;
 
     &:hover, &:focus {
-        background-color: $secondary-email-color;
+        background-color: $email-color;
     }
 }
 
 .linkedin-btn {
     @include btn-base();
-    background-color: #083e69;
+    border: 2px solid $linkedin-color;
 
     &:hover, &:focus {
-        background-color: #26557c;
+        background-color: $linkedin-color;
     }
 }
 
 .github-btn {
     @include btn-base();
-    background-color: #009207;
+    border: 2px solid $github-color;
 
     &:hover, &:focus {
-        background-color: #53ac58;
+        background-color: $github-color;
     }
 }
 
 .cv-btn {
     @include btn-base();
-    background-color: #86005e;
+    border: 2px solid $cv-color;
 
     &:hover, &:focus {
-        background-color: #c72a98;
+        background-color: $cv-color;
     }
 }

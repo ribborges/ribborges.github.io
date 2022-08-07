@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 //Font
-$primary-font: monospace;
+$primary-font: 'Ubuntu', sans-serif;
 $primary-font-size: large;
 
 //Color
@@ -13,8 +15,14 @@ $light-grey-color: #505050;
 $light-color: #eeeeee;
 
 //Social colors
-$primary-email-color: #299eff;
-$secondary-email-color: #83c7ff;
+$email-color: #299eff;
+$linkedin-color: #083e69;
+$github-color: #009207;
+$cv-color: #86005e;
 
 //Font size
 $text-font-size: 4rem;
+
+//Radius
+$border-radius: 5px;
+$hover-border-radius: 20px;
