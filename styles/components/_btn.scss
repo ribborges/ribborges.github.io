@@ -1,4 +1,5 @@
 @import "../abstract/var";
+@import "./input";
 
 @mixin btn-base {
     color: $light-color;

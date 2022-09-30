@@ -1,15 +1,17 @@
 @import "../abstract/var";
 
-input[type=number] {
-	padding: 15px;
-	color: $light-color;
+input, button, textarea, select {
+    padding: 15px;
+    color: $light-color;
     background-color: $dark-color;
-	border-style: none;
-    border: none;
-    border-radius: 15px;
+    border-radius: $border-radius;
     border: 2px solid $light-color;
-    cursor: pointer;
+    height: auto;
 	transition: 0.5s;
+
+    &::placeholder {
+        font-family: $primary-font;
+    }
 
     &:hover, &:focus {
         color: $dark-color;
@@ -17,13 +19,169 @@ input[type=number] {
 	    text-shadow: 1px 1px 10px white;
 	    box-shadow: 0 4px 8px 0 $light-grey-color, 0 6px 20px 0 $light-grey-color;
     }
+}
 
+fieldset {
+    padding: 15px;
+    border-radius: $border-radius;
+    border: 2px solid $light-color;
+
+    legend {
+        padding: 10px;
+        border-radius: $border-radius;
+        border: 2px solid $light-color;
+    }
+}
+
+input[type=text] {
+    
+}
+
+input[type=number] {
     &::-webkit-inner-spin-button {
         width: 30px;
-        height: 50px;
-        margin: 17px;
+        height: 30px;
         padding: 5px;
         transform: rotate(90deg);
         cursor: pointer;
+    }
+}
+
+input[type=password] {
+    
+}
+
+input[type=email] {
+    
+}
+
+input[type=url] {
+    
+}
+
+input[type=button], button {
+    cursor: pointer;
+}
+
+input[type=file] {
+    &::-webkit-file-upload-button {
+        display: none;
+    }
+}
+
+input[type=color] {
+    padding: 0;
+
+    &::-webkit-color-swatch {
+        border: none;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+input[type=checkbox], input[type=radio] {
+    min-height: 15px;
+    min-width: 15px;
+}
+
+textarea {
+    transition: 0.2s;
+}
+
+select {
+    option {
+        @include acrylic();
+        background-color: rgba($dark-color, 0.4);
+    }
+
+    optgroup {
+        @include acrylic();
+        background-color: rgba($dark-color, 0.4);
+        option {
+            @include acrylic();
+            background-color: rgba($dark-color, 0.4);
+        }
+    }
+}
+
+input[type=search] {
+
+}
+
+input[type=range] {
+    padding: 0;
+    border-radius: 0;
+    border: none;
+
+    &:hover, &:focus {
+        color: unset;
+        background: none;
+	    text-shadow: none;
+	    box-shadow: none;
+    }
+
+    &::-webkit-slider-runnable-track, &::-moz-range-track {
+        -webkit-appearance: none !important;
+        cursor: pointer;
+        background: none;
+        background-color: $light-grey-color;
+        transition: 0.5s;
+    }
+
+    &::-webkit-slider-thumb, &::-moz-range-thumb {
+        -webkit-appearance: none !important;
+        cursor: pointer;
+        background: none;
+        background-color: $primary-color;
+        border-radius: 0;
+        transition: 0.5s;
+    }
+}
+
+@mixin input-group-child {
+    &:last-child {
+        margin-left: -1px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    &:first-child {
+        margin-right: -1px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    &:not(:first-child):not(:last-child) {
+        margin-left: -1px;
+        margin-right: -1px;
+        border-radius: 0;
+    }
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: auto;
+    height: auto;
+
+    .input-addon {
+        @include input-group-child();
+        padding: 15px;
+        color: $light-color;
+        background-color: $dark-grey-color;
+        border-style: none;
+        border: none;
+        border-radius: $border-radius;
+        border: 2px solid $light-color;
+	    transition: 0.5s;
+        display: flex;
+        width: inherit;
+    }
+
+    input, button, textarea, select {
+        @include input-group-child();
     }
 }

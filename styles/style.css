@@ -9,7 +9,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-html, body, button, div, span, applet, object, iframe {
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+html, body, div, span, applet, object, iframe {
   margin: 0;
   padding: 0;
   top: 0;
@@ -152,6 +155,175 @@ h3 {
     width: unset;
   }
 }
+input, button, textarea, select {
+  padding: 15px;
+  color: #eeeeee;
+  background-color: #1a1a1a;
+  border-radius: 5px;
+  border: 2px solid #eeeeee;
+  height: auto;
+  transition: 0.5s;
+}
+input::-moz-placeholder, button::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+  font-family: "Ubuntu", sans-serif;
+}
+input:-ms-input-placeholder, button:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
+  font-family: "Ubuntu", sans-serif;
+}
+input::placeholder, button::placeholder, textarea::placeholder, select::placeholder {
+  font-family: "Ubuntu", sans-serif;
+}
+input:hover, input:focus, button:hover, button:focus, textarea:hover, textarea:focus, select:hover, select:focus {
+  color: #1a1a1a;
+  background-color: #eeeeee;
+  text-shadow: 1px 1px 10px white;
+  box-shadow: 0 4px 8px 0 #505050, 0 6px 20px 0 #505050;
+}
+
+fieldset {
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid #eeeeee;
+}
+fieldset legend {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #eeeeee;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+input[type=button], button {
+  cursor: pointer;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  display: none;
+}
+
+input[type=color] {
+  padding: 0;
+}
+input[type=color]::-webkit-color-swatch {
+  border: none;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+input[type=checkbox], input[type=radio] {
+  min-height: 15px;
+  min-width: 15px;
+}
+
+textarea {
+  transition: 0.2s;
+}
+
+select option {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(26, 26, 26, 0.4);
+}
+select optgroup {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(26, 26, 26, 0.4);
+}
+select optgroup option {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(26, 26, 26, 0.4);
+}
+
+input[type=range] {
+  padding: 0;
+  border-radius: 0;
+  border: none;
+}
+input[type=range]:hover, input[type=range]:focus {
+  color: unset;
+  background: none;
+  text-shadow: none;
+  box-shadow: none;
+}
+input[type=range]::-webkit-slider-runnable-track, input[type=range]::-moz-range-track {
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  background: none;
+  background-color: #505050;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+input[type=range]::-webkit-slider-thumb, input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  background: none;
+  background-color: #4700D8;
+  border-radius: 0;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: auto;
+  height: auto;
+}
+.input-group .input-addon {
+  padding: 15px;
+  color: #eeeeee;
+  background-color: #333333;
+  border-style: none;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid #eeeeee;
+  transition: 0.5s;
+  display: flex;
+  width: inherit;
+}
+.input-group .input-addon:last-child {
+  margin-left: -1px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.input-group .input-addon:first-child {
+  margin-right: -1px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.input-group .input-addon:not(:first-child):not(:last-child) {
+  margin-left: -1px;
+  margin-right: -1px;
+  border-radius: 0;
+}
+.input-group input:last-child, .input-group button:last-child, .input-group textarea:last-child, .input-group select:last-child {
+  margin-left: -1px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.input-group input:first-child, .input-group button:first-child, .input-group textarea:first-child, .input-group select:first-child {
+  margin-right: -1px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.input-group input:not(:first-child):not(:last-child), .input-group button:not(:first-child):not(:last-child), .input-group textarea:not(:first-child):not(:last-child), .input-group select:not(:first-child):not(:last-child) {
+  margin-left: -1px;
+  margin-right: -1px;
+  border-radius: 0;
+}
+
 .btn {
   color: #eeeeee;
   background-color: transparent;
@@ -347,6 +519,175 @@ h3 {
     width: unset;
   }
 }
+input, button, textarea, select {
+  padding: 15px;
+  color: #eeeeee;
+  background-color: #1a1a1a;
+  border-radius: 5px;
+  border: 2px solid #eeeeee;
+  height: auto;
+  transition: 0.5s;
+}
+input::-moz-placeholder, button::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+  font-family: "Ubuntu", sans-serif;
+}
+input:-ms-input-placeholder, button:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
+  font-family: "Ubuntu", sans-serif;
+}
+input::placeholder, button::placeholder, textarea::placeholder, select::placeholder {
+  font-family: "Ubuntu", sans-serif;
+}
+input:hover, input:focus, button:hover, button:focus, textarea:hover, textarea:focus, select:hover, select:focus {
+  color: #1a1a1a;
+  background-color: #eeeeee;
+  text-shadow: 1px 1px 10px white;
+  box-shadow: 0 4px 8px 0 #505050, 0 6px 20px 0 #505050;
+}
+
+fieldset {
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid #eeeeee;
+}
+fieldset legend {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #eeeeee;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+input[type=button], button {
+  cursor: pointer;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  display: none;
+}
+
+input[type=color] {
+  padding: 0;
+}
+input[type=color]::-webkit-color-swatch {
+  border: none;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+input[type=checkbox], input[type=radio] {
+  min-height: 15px;
+  min-width: 15px;
+}
+
+textarea {
+  transition: 0.2s;
+}
+
+select option {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(26, 26, 26, 0.4);
+}
+select optgroup {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(26, 26, 26, 0.4);
+}
+select optgroup option {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(26, 26, 26, 0.4);
+}
+
+input[type=range] {
+  padding: 0;
+  border-radius: 0;
+  border: none;
+}
+input[type=range]:hover, input[type=range]:focus {
+  color: unset;
+  background: none;
+  text-shadow: none;
+  box-shadow: none;
+}
+input[type=range]::-webkit-slider-runnable-track, input[type=range]::-moz-range-track {
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  background: none;
+  background-color: #505050;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+input[type=range]::-webkit-slider-thumb, input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  background: none;
+  background-color: #4700D8;
+  border-radius: 0;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: auto;
+  height: auto;
+}
+.input-group .input-addon {
+  padding: 15px;
+  color: #eeeeee;
+  background-color: #333333;
+  border-style: none;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid #eeeeee;
+  transition: 0.5s;
+  display: flex;
+  width: inherit;
+}
+.input-group .input-addon:last-child {
+  margin-left: -1px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.input-group .input-addon:first-child {
+  margin-right: -1px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.input-group .input-addon:not(:first-child):not(:last-child) {
+  margin-left: -1px;
+  margin-right: -1px;
+  border-radius: 0;
+}
+.input-group input:last-child, .input-group button:last-child, .input-group textarea:last-child, .input-group select:last-child {
+  margin-left: -1px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.input-group input:first-child, .input-group button:first-child, .input-group textarea:first-child, .input-group select:first-child {
+  margin-right: -1px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.input-group input:not(:first-child):not(:last-child), .input-group button:not(:first-child):not(:last-child), .input-group textarea:not(:first-child):not(:last-child), .input-group select:not(:first-child):not(:last-child) {
+  margin-left: -1px;
+  margin-right: -1px;
+  border-radius: 0;
+}
+
 .btn {
   color: #eeeeee;
   background-color: transparent;
@@ -704,30 +1045,173 @@ h3 {
   background-color: #505050;
 }
 
-input[type=number] {
+input, button, textarea, select {
   padding: 15px;
   color: #eeeeee;
   background-color: #1a1a1a;
-  border-style: none;
-  border: none;
-  border-radius: 15px;
+  border-radius: 5px;
   border: 2px solid #eeeeee;
-  cursor: pointer;
+  height: auto;
   transition: 0.5s;
 }
-input[type=number]:hover, input[type=number]:focus {
+input::-moz-placeholder, button::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+  font-family: "Ubuntu", sans-serif;
+}
+input:-ms-input-placeholder, button:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
+  font-family: "Ubuntu", sans-serif;
+}
+input::placeholder, button::placeholder, textarea::placeholder, select::placeholder {
+  font-family: "Ubuntu", sans-serif;
+}
+input:hover, input:focus, button:hover, button:focus, textarea:hover, textarea:focus, select:hover, select:focus {
   color: #1a1a1a;
   background-color: #eeeeee;
   text-shadow: 1px 1px 10px white;
   box-shadow: 0 4px 8px 0 #505050, 0 6px 20px 0 #505050;
 }
+
+fieldset {
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid #eeeeee;
+}
+fieldset legend {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #eeeeee;
+}
+
 input[type=number]::-webkit-inner-spin-button {
   width: 30px;
-  height: 50px;
-  margin: 17px;
+  height: 30px;
   padding: 5px;
   transform: rotate(90deg);
   cursor: pointer;
+}
+
+input[type=button], button {
+  cursor: pointer;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  display: none;
+}
+
+input[type=color] {
+  padding: 0;
+}
+input[type=color]::-webkit-color-swatch {
+  border: none;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+input[type=checkbox], input[type=radio] {
+  min-height: 15px;
+  min-width: 15px;
+}
+
+textarea {
+  transition: 0.2s;
+}
+
+select option {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(26, 26, 26, 0.4);
+}
+select optgroup {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(26, 26, 26, 0.4);
+}
+select optgroup option {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(26, 26, 26, 0.4);
+}
+
+input[type=range] {
+  padding: 0;
+  border-radius: 0;
+  border: none;
+}
+input[type=range]:hover, input[type=range]:focus {
+  color: unset;
+  background: none;
+  text-shadow: none;
+  box-shadow: none;
+}
+input[type=range]::-webkit-slider-runnable-track, input[type=range]::-moz-range-track {
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  background: none;
+  background-color: #505050;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+input[type=range]::-webkit-slider-thumb, input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  background: none;
+  background-color: #4700D8;
+  border-radius: 0;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: auto;
+  height: auto;
+}
+.input-group .input-addon {
+  padding: 15px;
+  color: #eeeeee;
+  background-color: #333333;
+  border-style: none;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid #eeeeee;
+  transition: 0.5s;
+  display: flex;
+  width: inherit;
+}
+.input-group .input-addon:last-child {
+  margin-left: -1px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.input-group .input-addon:first-child {
+  margin-right: -1px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.input-group .input-addon:not(:first-child):not(:last-child) {
+  margin-left: -1px;
+  margin-right: -1px;
+  border-radius: 0;
+}
+.input-group input:last-child, .input-group button:last-child, .input-group textarea:last-child, .input-group select:last-child {
+  margin-left: -1px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.input-group input:first-child, .input-group button:first-child, .input-group textarea:first-child, .input-group select:first-child {
+  margin-right: -1px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.input-group input:not(:first-child):not(:last-child), .input-group button:not(:first-child):not(:last-child), .input-group textarea:not(:first-child):not(:last-child), .input-group select:not(:first-child):not(:last-child) {
+  margin-left: -1px;
+  margin-right: -1px;
+  border-radius: 0;
 }
 
 .accordion .accordion-btn {
@@ -771,4 +1255,173 @@ input[type=number]::-webkit-inner-spin-button {
 .accordion .accordion-panel:last-child {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+input, button, textarea, select {
+  padding: 15px;
+  color: #eeeeee;
+  background-color: #1a1a1a;
+  border-radius: 5px;
+  border: 2px solid #eeeeee;
+  height: auto;
+  transition: 0.5s;
+}
+input::-moz-placeholder, button::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+  font-family: "Ubuntu", sans-serif;
+}
+input:-ms-input-placeholder, button:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
+  font-family: "Ubuntu", sans-serif;
+}
+input::placeholder, button::placeholder, textarea::placeholder, select::placeholder {
+  font-family: "Ubuntu", sans-serif;
+}
+input:hover, input:focus, button:hover, button:focus, textarea:hover, textarea:focus, select:hover, select:focus {
+  color: #1a1a1a;
+  background-color: #eeeeee;
+  text-shadow: 1px 1px 10px white;
+  box-shadow: 0 4px 8px 0 #505050, 0 6px 20px 0 #505050;
+}
+
+fieldset {
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid #eeeeee;
+}
+fieldset legend {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #eeeeee;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+input[type=button], button {
+  cursor: pointer;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  display: none;
+}
+
+input[type=color] {
+  padding: 0;
+}
+input[type=color]::-webkit-color-swatch {
+  border: none;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+input[type=checkbox], input[type=radio] {
+  min-height: 15px;
+  min-width: 15px;
+}
+
+textarea {
+  transition: 0.2s;
+}
+
+select option {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(26, 26, 26, 0.4);
+}
+select optgroup {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(26, 26, 26, 0.4);
+}
+select optgroup option {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(26, 26, 26, 0.4);
+}
+
+input[type=range] {
+  padding: 0;
+  border-radius: 0;
+  border: none;
+}
+input[type=range]:hover, input[type=range]:focus {
+  color: unset;
+  background: none;
+  text-shadow: none;
+  box-shadow: none;
+}
+input[type=range]::-webkit-slider-runnable-track, input[type=range]::-moz-range-track {
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  background: none;
+  background-color: #505050;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+input[type=range]::-webkit-slider-thumb, input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  background: none;
+  background-color: #4700D8;
+  border-radius: 0;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: auto;
+  height: auto;
+}
+.input-group .input-addon {
+  padding: 15px;
+  color: #eeeeee;
+  background-color: #333333;
+  border-style: none;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid #eeeeee;
+  transition: 0.5s;
+  display: flex;
+  width: inherit;
+}
+.input-group .input-addon:last-child {
+  margin-left: -1px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.input-group .input-addon:first-child {
+  margin-right: -1px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.input-group .input-addon:not(:first-child):not(:last-child) {
+  margin-left: -1px;
+  margin-right: -1px;
+  border-radius: 0;
+}
+.input-group input:last-child, .input-group button:last-child, .input-group textarea:last-child, .input-group select:last-child {
+  margin-left: -1px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.input-group input:first-child, .input-group button:first-child, .input-group textarea:first-child, .input-group select:first-child {
+  margin-right: -1px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.input-group input:not(:first-child):not(:last-child), .input-group button:not(:first-child):not(:last-child), .input-group textarea:not(:first-child):not(:last-child), .input-group select:not(:first-child):not(:last-child) {
+  margin-left: -1px;
+  margin-right: -1px;
+  border-radius: 0;
 }/*# sourceMappingURL=style.css.map */
