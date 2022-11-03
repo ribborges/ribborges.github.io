@@ -1,3 +1,5 @@
+/*   ---NavBar---   */
+
 const header = document.querySelector("nav");
 const topSection = document.querySelector(".header");
 const navElem = document.getElementById("navbar");
@@ -20,6 +22,8 @@ const topSectionObserver = new IntersectionObserver(function(entries, topSection
 }, options);
 
 topSectionObserver.observe(topSection);
+
+/*   ---Accordion---   */
 
 var acc = document.getElementsByClassName("accordion-btn");
 var i;
